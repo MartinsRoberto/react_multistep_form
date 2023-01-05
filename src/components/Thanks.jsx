@@ -1,7 +1,7 @@
 import React from 'react'
 import './Thanks.css'
 
-const Thanks = () => {
+const Thanks = ({data}) => {
   return (
     <div className="thanks">
       <h2>Falta pouco...</h2>
@@ -11,10 +11,10 @@ const Thanks = () => {
       </p>
       <p>Para concluir sua avaliação clique no botão de Enviar abaixo.</p>
       <p className="review-data">
-        <span>Satisfação com o produto:</span>
+        Satisfação com o produto: {data.review}
       </p>
       <p className="review-data">
-        <span>Comentário:</span>
+        Comentário: {data.comment}
       </p>
     </div>
   )

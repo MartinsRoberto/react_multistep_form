@@ -1,18 +1,21 @@
 .review-form{
   height: 300px;
-  display: flex;
-
 }
 
 .review-form label{
   flex: 1;
-  text-align: center;
+  color: white;
 }
 
+.review-form .row{
+  text-align: center;
+  display: flex;
+  margin-bottom: 30px;
+}
 
 .review-form input{
   position: absolute;
-  top: -10px;
+  top: -100px;
   z-index: -10;
 }
 .review-form span{
@@ -29,4 +32,11 @@
 
 .review-form input:checked ~ span svg {
   fill: #198754;
+}
+
+.review-form textarea{
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
 }

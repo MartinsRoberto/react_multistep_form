@@ -5,18 +5,18 @@ import React from 'react'
 
 import './Steps.css'
 
-const Steps = () => {
+const Steps = ({currentStep}) => {
   return (
     <div className="steps">
-      <div>
+      <div className="active">
         <AiOutlineUser />
         <p>Identificação</p>
       </div>
-      <div>
+      <div className={`step ${currentStep >= 1 ? "active" : ""}`}>
         <AiOutlineStar />
         <p>Avaliação</p>
       </div>
-      <div>
+      <div className={`step ${currentStep >= 2 ? "active" : ""}`}>
         <FiSend />
         <p>Envio</p>
       </div>
