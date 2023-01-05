@@ -1,0 +1,11 @@
+.thanks{
+  height: 300px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.thanks h2{
+  margin: 0px;
+}

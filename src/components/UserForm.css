@@ -1,0 +1,26 @@
+.user-form{
+  max-width: 70%;
+  height: 300px;
+  margin: auto;
+}
+.user-form span{
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.user-form input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+}
+
+.user-form input:focus{
+  outline: none;
+}
+
+.user-form label{
+  display: block;
+  margin-bottom: 16px;
+}

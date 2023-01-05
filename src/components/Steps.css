@@ -1,0 +1,37 @@
+
+.steps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.steps::after{
+  content: "";
+  width: 380px;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  top: 20px;
+}
+
+.steps div{
+  text-align: center;
+  background-color: #212121;
+  z-index: 1;
+  padding: 0.5rem;
+  width: 80px;
+}
+
+.steps svg{
+  font-size: 24px;
+  color: white;
+}
+
+.steps p{
+  font-size: 14px;
+  color: white;
+}
