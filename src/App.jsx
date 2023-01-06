@@ -35,12 +35,15 @@ function App() {
     <div className="App">
       <div className="container">
         <Steps currentStep={currentStep} />
-        <div className="inputs-container">{currentComponent}</div>
 
-        <div className="btns">
-          <button type='button' onClick={() => changeStep(currentStep - 1)}>Voltar</button>
-          <button type='button' onClick={() => changeStep(currentStep + 1)}>Avançar</button>
-        </div>
+        <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
+          <div className="inputs-container">{currentComponent}</div>
+
+          <div className="btns">
+            <button type='button' onClick={() => changeStep(currentStep - 1)}>Voltar</button>
+            <button type='submit'>Avançar</button>
+          </div>
+        </form>
 
       </div>
     </div>
