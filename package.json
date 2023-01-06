@@ -2,7 +2,7 @@
   "name": "multisteps_form",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://{MartinsRoberto}.github.io/2023-multistep_form",
+  "homepage": "https://MartinsRoberto.github.io/2023-multistep_form",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
